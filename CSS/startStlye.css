@@ -1,0 +1,21 @@
+h1{ 
+    color: aquamarine;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+
+}
+.ball {
+    width: 50%; /* Ancho del contenedor del formulario */
+    margin: 0 auto; /* Margen automático en los lados */
+    width: 1000px;
+    height: 500px;
+    background-color: #ff8800;
+    border-radius: 50px;
+}
+body {
+    color: #000;
+    text-align:center;
+    font-size:x-large;
+    background-color: #208787;
+}
+
+    
