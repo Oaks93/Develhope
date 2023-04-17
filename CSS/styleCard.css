@@ -1,0 +1,28 @@
+article,section{
+    border: 1px solid black;
+    max-width: 40ch;
+    padding: 10px;;
+
+}
+#l1{
+ margin: 10px;
+
+}
+img{
+    max-width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(46, 56, 3);
+}
+section{
+
+    background-image:radial-gradient(rgb(86, 62, 62),rgb(203, 223, 98),rgb(36, 84, 36))
+}
+h2,h3{
+    text-decoration: underline 3px;
+}
