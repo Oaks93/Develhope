@@ -1,0 +1,98 @@
+.checkers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.one, .two, .three, .four, .five, .six {
+  --item-size: 12vw;
+  --item-bg-color: #222;
+  --item-txt-dark-color: #222;
+  --item-txt-light-color: #fff;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  grid-auto-rows: 70px;
+  place-content: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+
+/* design styles */
+.one, .two, .three, .four, .five, .six {
+  min-height: 95;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 4vw;
+  
+}
+
+/* WRITE YOUR STYLES HERE TO CREATE DICE FACES */
+
+.one .checkers__item:nth-child(5) {
+  background-color: #dc0606;
+}
+
+.two .checkers__item:nth-child(1),
+.two .checkers__item:nth-child(9) {
+  background-color: #000;
+}
+
+.two .checkers__item:nth-child(5) {
+  background-color: #fff;
+}
+
+.three .checkers__item:nth-child(1),
+.three .checkers__item:nth-child(5),
+.three .checkers__item:nth-child(9) {
+  background-color: #000;
+}
+
+.four .checkers__item:nth-child(1),
+.four .checkers__item:nth-child(3),
+.four .checkers__item:nth-child(7),
+.four .checkers__item:nth-child(9) {
+  background-color: #000;
+}
+
+.four .checkers__item:nth-child(5),
+.four .checkers__item:nth-child(6),
+.four .checkers__item:nth-child(4),
+.four .checkers__item:nth-child(2) {
+  background-color: #fff;
+}
+
+.five .checkers__item:nth-child(1),
+.five .checkers__item:nth-child(3),
+.five .checkers__item:nth-child(5),
+.five .checkers__item:nth-child(7),
+.five .checkers__item:nth-child(9) {
+  background-color: #000;
+}
+
+.five .checkers__item:nth-child(6) {
+  background-color: #fff;
+}
+
+.six .checkers__item:nth-child(1),
+.six .checkers__item:nth-child(3),
+.six .checkers__item:nth-child(4),
+.six .checkers__item:nth-child(6),
+.six .checkers__item:nth-child(7),
+.six .checkers__item:nth-child(9) {
+  background-color: #000;
+}
+
+.six .checkers__item:nth-child(2),
+.six .checkers__item:nth-child(8) {
+  background-color: #fff;
+}
+
+.checkers__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:50%;
+  width:50% ;
+  height: 50% ;
+  
+}
