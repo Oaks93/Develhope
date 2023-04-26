@@ -1,0 +1,74 @@
+$redcolor: red;
+$greencolor: green;
+$bluecolor: blue;
+
+@mixin borderer ($color) {
+    border: solid  $color;
+    border-width: 0.5px;
+    padding: 10px
+}
+
+@mixin textStl ($color, $aln,$fntsize:1rem) {
+    color: $color;
+    text-align: $aln;
+    font-size: $fntsize
+
+}
+.container{
+    @include borderer($redcolor);
+    margin:10px;
+}
+.grennGrid {
+    
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 1fr 
+    1fr;
+    grid-template-areas:
+        "title title title title"
+        "a b c d"
+        "f f f f";
+    row-gap: 10px;
+
+    .title {
+        grid-area: title;
+        color: $greencolor;
+        text-decoration: underline blue;
+        text-align: center;
+
+    }
+
+    .gr1 {
+        grid-area: a;
+        @include textStl($bluecolor, center)
+    }
+
+    .gr2 {
+        grid-area: b;
+        @include textStl($redcolor, center)
+    }
+
+    .gr3 {
+        grid-area: c;
+        @include textStl($bluecolor, center)
+    }
+
+    .gr4 {
+        grid-area: d;
+
+        @include textStl($redcolor, center)
+    }
+    .footer{
+        grid-area: f;
+        @include textStl($greencolor,center,24px );
+        @include borderer($bluecolor)
+
+    }
+}
+
+article {
+    @include borderer(green);
+
+
+}
