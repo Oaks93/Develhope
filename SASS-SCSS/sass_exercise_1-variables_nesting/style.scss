@@ -1,61 +1,63 @@
 $redcolor: red;
 $greencolor: green;
 $bluecolor: blue;
-@mixin borderer ($color){
+
+@mixin borderer ($color) {
     border: solid 2px $color;
     border-width: 2px;
     padding: 10px
-    
 }
-@mixin textStl ($color,$aln){
+
+@mixin textStl ($color, $aln) {
     color: $color;
     text-align: $aln;
 
 }
+.grennGrid {
+    @include borderer(red);
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+        "title title title title"
+        "a b c d";
+    row-gap: 10px;
+
+    .title {
+        grid-area: title;
+        color: $greencolor;
+        text-decoration: underline blue;
+        text-align: center;
+        ;
 
 
-.grennGrid{
-   @include borderer(red);
-   margin:10px;    
-   display: grid;
-   grid-template-columns:repeat(4,1fr);
-   grid-template-rows: 50px 1fr;
-   grid-template-areas: 
-   "title title title title"
-   "a b c d";
-   row-gap: 10px
-}
-.title{
-    grid-area: title;
-    color: $greencolor;
-    text-decoration: underline blue;
-    text-align: center;
-    ;
-    
-    
-}
-.gr1{
-    grid-area: a;
-    @include textStl($bluecolor,center )
+    }
+
+    .gr1 {
+        grid-area: a;
+        @include textStl($bluecolor, center)
+    }
+
+    .gr2 {
+        grid-area: b;
+        @include textStl($redcolor, center)
+    }
+
+    .gr3 {
+        grid-area: c;
+        @include textStl($bluecolor, center)
+    }
+
+    .gr4 {
+        grid-area: d;
+
+        @include textStl($redcolor, center)
+    }
 }
 
-.gr2{
-    grid-area: b;
-    @include textStl($redcolor,center )
-}
-.gr3{
-    grid-area: c;
-    @include textStl($bluecolor,center )
-   
-}
-.gr4{
-    grid-area: d;
-   
-    @include textStl($redcolor,center )
-}
-article{
+article {
     @include borderer(green);
-  
- 
-}
 
+
+}
