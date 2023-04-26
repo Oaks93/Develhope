@@ -1,0 +1,52 @@
+$redcolor: rgba(255, 0, 0, 0.468);
+body{
+    background-color: $redcolor;
+}
+
+@function doubleSize($size){
+    @return $size*2
+}
+@function pow($base, $exponent){ 
+    $result: 1;
+    @for $_ from 1 through $exponent{
+        $result:$result*$base;         
+    } 
+    @return $result
+}
+@mixin mix1($color){
+    padding: 1rem;
+    border: 2px solid $color;
+    color: $color;
+}
+@mixin resizer($width:100px,$height:100px){
+
+width: $width;
+height: $height;
+
+}
+.small{
+    @include resizer()
+}
+.medium{
+    @include resizer(200px,200px)
+}
+.large{
+    @include resizer(300px,300px )
+}
+
+ul{
+    @for $i from 1 through 5{
+    li:nth-child(#{$i}){
+        font-size: doubleSize($i) +rem;}
+    }
+}
+.first-li{
+    @include mix1(blue)
+}
+.second-li{@include mix1(red)}
+.third-li{@include mix1(green)}
+.fourth-li{@include mix1(orange)}
+.fifth-li{@include mix1(pink)}
+.container {
+    margin-left: pow(2, 3) * 1px;
+  }

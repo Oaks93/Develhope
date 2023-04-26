@@ -1,0 +1,70 @@
+body {
+  background-color: rgba(255, 0, 0, 0.468);
+}
+
+.small {
+  width: 100px;
+  height: 100px;
+}
+
+.medium {
+  width: 200px;
+  height: 200px;
+}
+
+.large {
+  width: 300px;
+  height: 300px;
+}
+
+ul li:nth-child(1) {
+  font-size: 2rem;
+}
+ul li:nth-child(2) {
+  font-size: 4rem;
+}
+ul li:nth-child(3) {
+  font-size: 6rem;
+}
+ul li:nth-child(4) {
+  font-size: 8rem;
+}
+ul li:nth-child(5) {
+  font-size: 10rem;
+}
+
+.first-li {
+  padding: 1rem;
+  border: 2px solid blue;
+  color: blue;
+}
+
+.second-li {
+  padding: 1rem;
+  border: 2px solid red;
+  color: red;
+}
+
+.third-li {
+  padding: 1rem;
+  border: 2px solid green;
+  color: green;
+}
+
+.fourth-li {
+  padding: 1rem;
+  border: 2px solid orange;
+  color: orange;
+}
+
+.fifth-li {
+  padding: 1rem;
+  border: 2px solid pink;
+  color: pink;
+}
+
+.container {
+  margin-left: 8px;
+}
+
+/*# sourceMappingURL=output.css.map */

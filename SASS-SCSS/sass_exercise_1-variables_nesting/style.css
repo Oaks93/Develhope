@@ -1,0 +1,50 @@
+.grennGrid {
+  border: solid 2px red;
+  border-width: 2px;
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: "title title title title" "a b c d";
+  row-gap: 10px;
+}
+
+.title {
+  grid-area: title;
+  color: green;
+  text-decoration: underline blue;
+  text-align: center;
+}
+
+.gr1 {
+  grid-area: a;
+  color: blue;
+  text-align: center;
+}
+
+.gr2 {
+  grid-area: b;
+  color: red;
+  text-align: center;
+}
+
+.gr3 {
+  grid-area: c;
+  color: blue;
+  text-align: center;
+}
+
+.gr4 {
+  grid-area: d;
+  color: red;
+  text-align: center;
+}
+
+article {
+  border: solid 2px green;
+  border-width: 2px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
