@@ -9,46 +9,49 @@
   margin: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 50px 1fr 1fr;
-  grid-template-areas: "title title title title""a b c d""f f f f";
+  grid-template-rows: 50px 90px 1fr 1fr;
+  grid-template-areas: "title title title title" "subtitle subtitle subtitle subtitle" "a b c d" "f f f f";
   row-gap: 10px;
 }
-
-.grennGrid .title {
+.grennGrid .title, .grennGrid .subtitle {
   grid-area: title;
   color: green;
   text-decoration: underline blue;
   text-align: center;
 }
-
+.grennGrid .subtitle {
+  padding: 1rem;
+  grid-area: subtitle;
+  border: solid red;
+  border-width: 0.5px;
+  padding: 10px;
+  text-decoration: none;
+  justify-self: center;
+}
 .grennGrid .gr1 {
   grid-area: a;
   color: blue;
   text-align: center;
   font-size: 1rem;
 }
-
 .grennGrid .gr2 {
   grid-area: b;
   color: red;
   text-align: center;
   font-size: 1rem;
 }
-
 .grennGrid .gr3 {
   grid-area: c;
   color: blue;
   text-align: center;
   font-size: 1rem;
 }
-
 .grennGrid .gr4 {
   grid-area: d;
   color: red;
   text-align: center;
   font-size: 1rem;
 }
-
 .grennGrid .footer {
   grid-area: f;
   color: green;
@@ -65,4 +68,4 @@ article {
   padding: 10px;
 }
 
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=style.css.map */
