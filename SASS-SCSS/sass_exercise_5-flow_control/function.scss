@@ -3,7 +3,7 @@
     $rem: $px / 16;
     @return #{$rem}rem;
 }
-@function bg-calc($color:white,$multiplier){
-  $complemet: color.complement($color: $color);
-  $adjusted: color.adjust($complement,$lightness: $multiplier +5%)
-}
+// @function bg-calc($color:white,$multiplier){
+//   $complemet: color.complement($color: $color);
+//   $adjusted: color.adjust($complement,$lightness: $multiplier +5%)
+// }

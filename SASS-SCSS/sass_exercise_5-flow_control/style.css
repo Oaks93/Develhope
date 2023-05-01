@@ -1,6 +1,7 @@
 .fs-1rem {
   height: 2.8125rem;
   width: 2.8125rem;
+  font-size: 1rem;
   border: solid red;
   border-width: 0.5px;
   padding: 10px;
@@ -9,6 +10,7 @@
 .fs-2rem {
   height: 2.8125rem;
   width: 2.8125rem;
+  font-size: 2rem;
   border: solid red;
   border-width: 0.5px;
   padding: 10px;
@@ -17,9 +19,107 @@
 .fs-3rem {
   height: 2.8125rem;
   width: 2.8125rem;
+  font-size: 3rem;
   border: solid red;
   border-width: 0.5px;
   padding: 10px;
+}
+
+.blocks div:nth-child(1) {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+
+.blocks div:nth-child(2) {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+
+.blocks div:nth-child(3) {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+
+.blocks div:nth-child(4) {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+.blocks div:nth-child(5) {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+
+.blocks div:nth-child(6) {
+  background-color: #b3b3b3;
+  color: #4d4d4d;
+}
+
+.blocks div:nth-child(7) {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+
+.blocks div:nth-child(8) {
+  background-color: #999999;
+  color: #666666;
+}
+
+.blocks div:nth-child(9) {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+
+.blocks div:nth-child(10) {
+  background-color: gray;
+  color: gray;
+  background-color: blue;
+  color: red;
+}
+
+.blocks div:nth-child(11) {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+
+.blocks div:nth-child(12) {
+  background-color: #666666;
+  color: #999999;
+}
+
+.blocks div:nth-child(13) {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+
+.blocks div:nth-child(14) {
+  background-color: #4d4d4d;
+  color: #b3b3b3;
+}
+
+.blocks div:nth-child(15) {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+
+.blocks div:nth-child(16) {
+  background-color: #333333;
+  color: #cccccc;
+}
+
+.blocks div:nth-child(17) {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+
+.blocks div:nth-child(18) {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+
+.blocks div:nth-child(19) {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
 }
 
 .container {
@@ -33,7 +133,7 @@
   margin: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 50px 90px inherit 1fr 1fr;
+  grid-template-rows: 50px 90px 100px 1fr 1fr;
   grid-template-areas: "title title title title" "subtitle subtitle subtitle subtitle" "a b c d" "g g g g" "f f f f";
   row-gap: 10px;
 }
@@ -89,6 +189,7 @@
   grid-area: g;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 article {

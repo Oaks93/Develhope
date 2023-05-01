@@ -17,10 +17,23 @@
     .fs-#{$size} {
         height: function.px-to-rem(45);
         width: function.px-to-rem(45);
+        font-size: $size;
         @include borderer(red)
     }
+   
 }
-
+@for $index from 1 to 20{
+    .blocks div:nth-child(#{$index}){
+        background-color:darken(white,$index*5%);
+        color:lighten(#000000,$index*5%); 
+        @if $index == 10 {
+            background-color: variables.$bluecolor;
+            color: variables.$redcolor;
+        }
+            
+    }
+   
+}
 .container {
     @include borderer(variables.$redcolor);
     margin: 10px;
@@ -31,7 +44,7 @@
     margin: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50px 90px inherit 1fr 1fr;
+    grid-template-rows: 50px 90px 100px 1fr 1fr;
     grid-template-areas:
         "title title title title"
         "subtitle subtitle subtitle subtitle"
@@ -90,6 +103,8 @@
         grid-area: g;
         display: flex;
         justify-content: space-between;
+        align-items: center
+        
     }
 }
 
