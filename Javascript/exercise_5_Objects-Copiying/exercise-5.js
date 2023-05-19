@@ -5,7 +5,6 @@ const person1 = {
 };
 
 const person2 = person1;
-
 // Modify the property `firstName` of the `person2` in "Simon".
 //This exercise can be solved in two different ways, one way that records that the name has been changed, that is to say:
 person2.firstName = "Simon";
