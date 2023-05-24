@@ -1,0 +1,76 @@
+body {
+    background-image: url(bg-01.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+
+}
+
+img {
+    width: 50px;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 10px;
+    margin: 0 auto;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-evenly;
+
+
+}
+
+.title {
+    font-size: 39px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+.logos {
+    display:flex; 
+    gap: 20px;
+}
+
+.form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-bottom: solid 0.5px gray;
+
+}
+
+.frgt {
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 70px;
+    background-color: purple;
+    color: white;
+    padding: 15px 0px;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+   
+}
+.circulos{
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
