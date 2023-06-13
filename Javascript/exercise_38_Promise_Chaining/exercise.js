@@ -1,4 +1,4 @@
-const isLogged = false;
+const isLogged = true;
 
 const firstPromise = new Promise((resolve, reject) => {
   if (isLogged) {
@@ -14,17 +14,14 @@ const secondPromise = (number) => {
     if (number > 0.5) {
       resolve({ name: "John", age: 24 });
     } else {
-      reject(`${number} is smaller than 0.5`);
+      reject(`Error: ${number} is smaller than 0.5`);
     }
   });
 };
 
 firstPromise
-  .then((randomNumber) => secondPromise(randomNumber))
+  .then((number) => secondPromise(number))
+  .then((result) => console.log(result))
   .catch((error) => console.error(error))
-  .then((result) => {
-    console.log(result); // No se imprimirá porque firstPromise será rechazada
-  })
-  .catch((error) => {
-    console.error(error); // Error: El usuario no ha iniciado sesión
-  });
+  
+  

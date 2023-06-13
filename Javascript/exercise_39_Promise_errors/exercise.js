@@ -1,5 +1,5 @@
 
-const isLogged = false;
+const isLogged = true;
 
 const firstPromise = new Promise((resolve, reject) => {
   if (isLogged) {
@@ -21,11 +21,7 @@ const secondPromise = (number) => {
 };
 
 firstPromise
-  .then((randomNumber) => secondPromise(randomNumber))
-  .catch((error) => console.error(error))
-  .then((result) => {
-    console.log(result); // { name: "John", age: 24 }
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+.then((number) => secondPromise(number))
+.then((result) => console.log(result))
+.catch((error) => console.error(error))
+
