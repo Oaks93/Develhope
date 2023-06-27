@@ -3,8 +3,9 @@ import Message from "./components/Message";
 
 function App() {
   return (
-   <> <Hello/>
-    <Message/>
+    <>
+      <Hello />
+      <Message />
     </>
   );
 }
