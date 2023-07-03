@@ -1,17 +1,19 @@
 // import Hello from "./components/Hello";
 // import Message from "./components/Message";
-// import Welcome from "./components/Welcome";
+import Welcome from "./components/Welcome";
 // import Welcomedefault from "./components/Welcomedefault";
 // import WelcomeAge from "./components/WelcomAge";
-import WelcomewithJSX from "./components/WelcomewithJSX";
+// import WelcomewithJSX from "./components/WelcomewithJSX";
+// import Age from "./components/Age";
+
 function App() {
   return (
     <>
-      <WelcomewithJSX name = {name}></WelcomewithJSX>
+      <Welcome name={"Carlos"} age={<strong>30</strong>}/>
     </>
 
   );
 }
 
-const name=<strong>Carlos Gomez</strong>
+
 export default App;
