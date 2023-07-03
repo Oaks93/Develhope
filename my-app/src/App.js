@@ -6,12 +6,13 @@
 // import WelcomewithJSX from "./components/WelcomewithJSX";
 // import Age from "./components/Age";
 //import WelcomeAdult from "./components/WelcomeAdult";
-import WelcomePropsExisting from "./components/WelcomePropsExisting";
+import Welcome from "./components/Welcome";
+//import WelcomePropsExisting from "./components/WelcomePropsExisting";
 
 function App() {
   return (
     <>
-      <WelcomePropsExisting name={"Carlos"} age={14}/>
+      <Welcome name={"Carlos"} age={70}/>
     </>
 
   );

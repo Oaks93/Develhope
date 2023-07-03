@@ -2,13 +2,14 @@ import React from 'react';
 
 const Age = (props) => {
   const ageStyle = {
-    color: props.age >= 18 ? 'blue' : 'red',
-    
+    color: props.age >= 18 && props.age < 65 ? 'blue' : 'red',
+
   };
 
   return (
+
     <div>
-      {props.age >= 18 ? (<span style={ageStyle}>Your age is: {props.age}</span>) : (<span style={ageStyle} >You are too young</span>)}
+      {props.age >= 18 && props.age < 65 ? (<span style={ageStyle}>Your age is: {props.age}</span>) : (<span style={ageStyle} >You are smaller than 18 or older than 65</span>)}
     </div>
   );
 };
