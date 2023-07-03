@@ -5,12 +5,13 @@
 // import WelcomeAge from "./components/WelcomAge";
 // import WelcomewithJSX from "./components/WelcomewithJSX";
 // import Age from "./components/Age";
-import WelcomeAdult from "./components/WelcomeAdult";
+//import WelcomeAdult from "./components/WelcomeAdult";
+import WelcomePropsExisting from "./components/WelcomePropsExisting";
 
 function App() {
   return (
     <>
-      <WelcomeAdult name={"Carlos"} age={18}/>
+      <WelcomePropsExisting name={"Carlos"} age={14}/>
     </>
 
   );
