@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Name({age,name}) {
+export default function Name({ name }) {
   return (
-    <> <h1>{name}</h1>
-    <div>{age}</div> </>
+    <>
+      <h1>{name}</h1>
+    </>
 
   )
 }
