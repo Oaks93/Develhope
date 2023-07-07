@@ -20,42 +20,20 @@ import { Route, BrowserRouter as Router, Routes, } from 'react-router-dom'
 import humans from "./assets/humans.jpg"
 import animal1 from "./assets/animal1.jpg"
 import animal2 from "./assets/animal2.jpg"
-
+import Memo from './components/memo'
 
 function App() {
 
   return (
     <>
 
-      <Router>
-        <Routes>
-
-          <Route path='/' element={
-            <>
-              <a href="/humans">Humans</a>
-              <a href="/animals">Animals</a>
-            </>
-          }
-         />
-
-          
-          <Route path='/humans' element={<div><img src={humans} alt="humans" /></div>}/>
-          <Route path='/animals' element={
-            <>
-              <a href="/animal1">Animal 1</a>
-              <a href="/animal2">Animal 2</a></>
-          }
-          />
-
-        
-          <Route path='/animal1' element={<div><img src={animal1} alt="dogs" /></div>}/>
-          <Route path='/animal2' element={<div><img src={animal2} alt="dog" /></div>}/>
-        </Routes>
-
-      </Router>
-
+      <Memo/>
+      
     </>
   )
 }
 
 export default App
+// React.memo = renderIfPropsHaveChanged
+// it wraps an entire component
+// and check it's props that it receives from it's parent. If the props stay the same across multiple re-renders. This component will not be re-rendered unnecessarily, since it's wrapped by memo
