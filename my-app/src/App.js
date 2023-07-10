@@ -10,11 +10,11 @@
 //import WelcomePropsExisting from "./components/WelcomePropsExisting";
 //  import WelcomeJohn from "./components/WelcomeJohn";
 import React from "react";
-import Counter from "./components/Counter";
+import CounterProps from "./components/CounterProps";
 function App() {
   return (
     <>
-      <Counter/>
+      <CounterProps initialValue={12} interval={1000} amount={1}/>
     </>
 
   );
