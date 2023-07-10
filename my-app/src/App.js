@@ -8,11 +8,13 @@
 //import WelcomeAdult from "./components/WelcomeAdult";
 //import Welcome from "./components/Welcome";
 //import WelcomePropsExisting from "./components/WelcomePropsExisting";
- import WelcomeJohn from "./components/WelcomeJohn";
+//  import WelcomeJohn from "./components/WelcomeJohn";
+import React from "react";
+import Counter from "./components/Counter";
 function App() {
   return (
     <>
-      <WelcomeJohn name={"John"} age={60}/>
+      <Counter/>
     </>
 
   );
