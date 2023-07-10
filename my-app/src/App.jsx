@@ -1,9 +1,10 @@
 import React from "react";
-import Login from "./components/Login";
+import LoginReset from "./components/LoginReset";
+
 function App() {
   return (
     <>
-        <Login/>
+        <LoginReset/>
     </>
 
   );
