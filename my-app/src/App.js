@@ -10,12 +10,13 @@
 //import WelcomePropsExisting from "./components/WelcomePropsExisting";
 //  import WelcomeJohn from "./components/WelcomeJohn";
 import React from "react";
-import CounterProps from "./components/CounterProps";
+// import CounterProps from "./components/CounterProps";
+import ClickCounter from "./components/ClickCounter";
 
 function App() {
   return (
     <>
-      <CounterProps initialValue={12} interval={1000} amount={1}/>
+      <ClickCounter/>
     </>
 
   );
