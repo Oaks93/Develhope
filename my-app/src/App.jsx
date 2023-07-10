@@ -1,10 +1,10 @@
 import React from "react";
-import LoginReset from "./components/LoginReset";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
     <>
-        <LoginReset/>
+        <TodoList/>
     </>
 
   );
