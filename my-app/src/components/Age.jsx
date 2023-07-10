@@ -7,7 +7,7 @@ const Age = ({ age }) => {
 
   return (
     <div>
-      {age >= 18 && age < 65 ? (
+      {  age >= 18 && age < 65 ? (
         <span style={ageStyle}>Your age is: {age}</span>
       ) : (
         <span style={ageStyle}>You are smaller than 18 or older than 65</span>
